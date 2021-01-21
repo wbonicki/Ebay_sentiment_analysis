@@ -11,7 +11,7 @@ The data were collected from Ebay e-commerce website and data collection was car
 
 Functions for data extracion are in _data_extraction.ipynb_ and the process of data collection is shown below.
 
-![alt text](https://raw.githubusercontent.com/wbonicki/bitcoin-price-prediction/master/tree.jpg)
+![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/search_results.jpg)
 
 List of search words are given by a user. The script looks for products with reviews for every given search word for _n_ pages.
 Next it downloads all the ratings and reviews and puts them in pandas dataframe.
