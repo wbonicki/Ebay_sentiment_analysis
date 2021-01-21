@@ -29,7 +29,7 @@ all reviews were taken into account and it was multiclass problem.
 The figure below shows a general way of proceeding for both cases. 
 
 
-![alt text](https://raw.githubusercontent.com/wbonicki/bitcoin-price-prediction/master/TS.jpg)
+![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/schema.jpg)
 
 Two aproaches were tested: 
  - classical machine learning (algorithms like SupportVectorMachine, DecisionsTree, LogisticRegression etc.
