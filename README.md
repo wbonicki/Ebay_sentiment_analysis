@@ -16,6 +16,8 @@ Functions for data extracion are in _data_extraction.ipynb_ and the process of d
 List of search words are given by a user. The script looks for products with reviews for every given search word for _n_ pages.
 Next it downloads all the ratings and reviews and puts them in pandas dataframe.
 
+![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/search_results2.jpg)
+
 # 2. Model for sentiment analysis
 
 Because almost 93% of the reviews are positive the classification task is considered as imbalanced classes problem. 
@@ -32,9 +34,11 @@ The figure below shows a general way of proceeding for both cases.
 ![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/schema.jpg)
 
 Two aproaches were tested: 
- - classical machine learning (algorithms like SupportVectorMachine, DecisionsTree, LogisticRegression etc.
+ - classic machine learning (algorithms like SupportVectorMachine, DecisionsTree, LogisticRegression etc.)
  - deep learning: recurrent neural networks with pretrained word embeddings (glove)
 
 The models were evaluated by precision, recall and accuracy scores.
 
 ## Results
+
+Support Vector Classifier turned out to be the best model for boths cases. 
