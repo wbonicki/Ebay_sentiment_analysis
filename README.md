@@ -49,10 +49,17 @@ Support Vector Classifier turned out to be the best model for boths cases. It ou
 
 # Files description
 `Classic_Machine_Learning.ipynb` - jupyter notebook file with classic machine learning approach
+
 `Data_extraction.ipynb` -  jupyter notebook file with function for downloading reviews from Ebay
+
 `Neural_Networks.ipynb` - jupyter notebook file with neural networks
+
 `data_analysis.ipynb` - jupyter notebook file with data analysis
+
 `Data_ML.csv` - a csv file where reviews are cleaned and prepared for machine learning modelling
+
 `Data_NN.csv` - a csv file where reviews are cleaned and prepared for neural networks modelling
+
 `ebay_reviews.csv` - the first part of raw reviews
+
 `ebay_reviews30122020.csv` - the second part of raw reviews
