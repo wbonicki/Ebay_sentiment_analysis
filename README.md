@@ -16,7 +16,7 @@ List of search words are given by a user. The script looks for products with rev
 
 ![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/search_results.jpg)
 
-When a product with reviews is found the scrip downloads all the ratings and reviews and puts them in pandas dataframe.
+When a product with reviews is found the scrip downloads all the ratings and reviews and puts them in pandas dataframe. __If a review is very long (_read full review_ option) the script does not download all content__ 
 
 ![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/search_results2.jpg)
 
@@ -36,7 +36,7 @@ all reviews were taken into account and it was multiclass problem.
 
 Two aproaches were tested: 
  - classic machine learning (algorithms like SupportVectorMachine, DecisionsTree, LogisticRegression etc.)
- - deep learning: recurrent neural networks with pretrained word embeddings (glove)
+ - deep learning: recurrent neural networks with pretrained word embeddings (glove - https://nlp.stanford.edu/projects/glove/)
 
 The test set used for final evaluation was 20% of all the reviews
 
@@ -44,7 +44,7 @@ The schema below shows a general way of proceeding for both cases.
 
 ![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/schema.jpg)
 
-Model performance was evaluated by precision, recall and accuracy scores for minor classes.
+Model performance was evaluated by precision, recall and f1 scores for minor classes.
 
 ## 4. Best model performance evaluation
 
@@ -56,7 +56,7 @@ The best model for both cases was support vector classifier with rbf kernel. It 
 Neutral reviews are diversified and they are very ambiguous but the model handles such cases quite well.
 It would be reasonable to create a model for predicting a sentiment regardless of customers rating - sometimes their ratings are misleading.
 It should be emphasised that sentiment prediction can have different goals - sometimes detecting all negative reviews is more important and sometimes general accuracy.
-Probabilty threshold and scoring depends on this issue. 
+Probabilty threshold and scoring depend on this issue. 
 
 
 # Files description
