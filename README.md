@@ -52,7 +52,35 @@ The best model (for both cases) was evaluated by classification report and confu
 
 # Conclusion
 
-The best model for both cases was support vector classifier with rbf kernel. It happens that rating do not correspond to the review (many complains and a positive rating).
+The best model for both cases was support vector classifier with rbf kernel. 
+
+|  BINARY CASE |Predicted negative|Predicted positive|
+| ------------ |:----------------:|:----------------:|
+|True negative |     387          |     18           |
+|True positive |     40           |   8417           |
+
+
+|  BINARY CASE   |precision|recall|f1-score|
+| -------------- |:-------:|:----:|:------:|
+|negative reviews|    0.91 | 0.96 |  0.93  |
+|positive reviews|   >0.995|>0.995|  >0.995|
+
+
+|  MULTICLASS CASE |Predicted negative|Predicted neutral |Predicted positive|
+| ---------------- |:----------------:|:----------------:|:----------------:|
+|True negative     |     360          |     2            | 43               |
+|True neutral      |            13    |        235       |    41            |
+|True positive     |       8          |      4           |     8445         |
+
+
+|  MULTICLASS CASE |precision         |recall            |f1-score          |
+| ---------------- |:----------------:|:----------------:|:----------------:|
+|negative reviews  |     0.94         |     0.89         |  0.92            |
+|neutral reviews   |           0.98   |      0.81        |     0.89         |
+|positive reviews  |       0.99       |      >0.995      |     0.99         |
+
+
+It happens that rating do not correspond to the review (many complains and a positive rating).
 Neutral reviews are diversified and they are very ambiguous but the model handles such cases quite well.
 It would be reasonable to create a model for predicting a sentiment regardless of customers rating - sometimes their ratings are misleading.
 It should be emphasised that sentiment prediction can have different goals - sometimes detecting all negative reviews is more important and sometimes general accuracy.
