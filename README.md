@@ -99,12 +99,12 @@ Probabilty threshold and scoring depend on this issue.
 
 `Final_model_summary.ipynb` - jupyter notebook file where the best models are evaluated
 
-`Data_ML.csv` - a csv file where reviews are cleaned and prepared for machine learning modelling
+`Data_ML.csv` - csv file where reviews are cleaned and prepared for machine learning modelling
 
-`Data_NN.csv` - a csv file where reviews are cleaned and prepared for neural networks modelling
+`Data_NN.csv` - csv file where reviews are cleaned and prepared for neural networks modelling
 
 `ebay_reviews.csv` - the first part of raw reviews
 
 `ebay_reviews30122020.csv` - the second part of raw reviews
 
-`models` - a folder with best models
+`models` - folder with saved models
