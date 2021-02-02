@@ -80,7 +80,7 @@ The best model for both cases was support vector classifier with rbf kernel.
 |positive reviews  |       0.99       |      >0.995      |     0.99         |
 
 
-It happens that rating do not correspond to the review (many complains and a positive rating).
+Quite often the rating does not correspond to the review (many complains and a positive rating).
 Neutral reviews are diversified and they are very ambiguous but the model handles such cases quite well.
 It would be reasonable to create a model for predicting a sentiment regardless of customers rating - sometimes their ratings are misleading.
 It should be emphasised that sentiment prediction can have different goals - sometimes detecting all negative reviews is more important and sometimes general accuracy.
