@@ -20,6 +20,8 @@ When a product with reviews is found the scrip downloads all the ratings and rev
 
 ![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/search_results2.jpg)
 
+The number of unique reviews is 44756 
+
 ## 2. Data analysis and preparation for modelling
 
 The data was analized and word clouds for each sentiment group were built. Data was cleaned and  preprocessed for machine learning and neural network modelling using user defined transformers.
