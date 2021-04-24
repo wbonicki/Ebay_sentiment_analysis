@@ -8,17 +8,21 @@ The project preceeded in the following steps:
 
 ## 1. Data extraction
 
-The data were collected from Ebay e-commerce website and data collection was carried out twice (at two different times). 
+The data were collected from ebay e-commerce website and data collection was carried out twice (at two different times). 
 
-Functions for data extracion are in `Data_extraction.ipynb` and the process of data collection is shown below.
+Class for data extracion is in `Ebay_Crawler.ipynb` and the process of data collection is shown below.
 
 List of search words are given by a user. The script looks for products with reviews for every given search word for _n_ pages.
 
 ![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/search_results.jpg)
 
-When a product with reviews is found the scrip downloads all the ratings and reviews and puts them in pandas dataframe. __If a review is very long (_read full review_ option) the script does not download all content__ 
+When a product with reviews is found the scrip downloads all of the ratings and reviews and puts them in pandas dataframe. __If a review is very long (_read full review_ option) the script does not download all content__ 
 
 ![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/search_results2.jpg)
+
+A short instruction showing how to use class
+
+![alt text](https://raw.githubusercontent.com/wbonicki/Ebay_sentiment_analysis/master/screeny/ebay_crawler2.JPG)
 
 The number of unique reviews is 44756 
 
@@ -91,7 +95,7 @@ Probabilty threshold and scoring depend on this issue.
 
 # Files description
 
-`Data_extraction.ipynb` -  jupyter notebook file with function for downloading reviews from Ebay
+`Ebay_Crawler.ipynb` -  jupyter notebook file with class for collecting ebay reviews
 
 `Data_analysis.ipynb` - jupyter notebook file with data analysis
 
